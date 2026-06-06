@@ -1,0 +1,22 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Outfit,sans-serif}
+body{background:#081528;color:#fff;line-height:1.7}
+nav{display:flex;justify-content:space-between;padding:20px 8%;position:fixed;width:100%;background:rgba(8,21,40,.85);backdrop-filter:blur(10px)}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+.logo{font-weight:800}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:linear-gradient(135deg,#081528,#0D2346)}
+.hero h1{font-size:4rem;max-width:900px}
+.hero p{max-width:800px;margin:20px 0}
+.btn{background:#25D366;color:#fff;padding:16px 30px;border-radius:50px;text-decoration:none;font-weight:700}
+section{padding:90px 8%}
+h2{text-align:center;margin-bottom:30px;font-size:2.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.05);padding:25px;border-radius:20px;border:1px solid rgba(255,255,255,.08)}
+.card:hover{transform:translateY(-5px);transition:.3s}
+form{max-width:700px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,select,textarea{padding:15px;border:none;border-radius:12px}
+button{padding:15px;border:none;border-radius:12px;background:#25D366;color:#fff;font-weight:700;cursor:pointer}
+.cta{text-align:center}
+footer{text-align:center;padding:30px;background:#06111f;color:#aaa}
+.whats{position:fixed;bottom:20px;right:20px;background:#25D366;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:28px}
+@media(max-width:768px){.hero h1{font-size:2.3rem} nav div:last-child{display:none}}
