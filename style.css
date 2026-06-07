@@ -1,0 +1,76 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Outfit,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#030914;color:#fff;line-height:1.7;overflow-x:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;position:fixed;width:100%;z-index:999;background:rgba(3,9,20,.88);backdrop-filter:blur(15px)}
+.logo img{height:58px}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-weight:500}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:120px 20px;background:
+linear-gradient(rgba(3,9,20,.82),rgba(3,9,20,.92)),
+url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5') center/cover}
+.hero h1{font-size:clamp(3rem,7vw,5.8rem);max-width:1100px;margin-bottom:20px}
+.hero p{max-width:900px;font-size:1.2rem;margin:20px auto 35px}
+.btn{background:#25D366;color:#fff;padding:18px 34px;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block}
+section{padding:110px 8%}
+h2{text-align:center;margin-bottom:30px;font-size:3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:rgba(255,255,255,.05);padding:30px;border-radius:24px;border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(12px);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+form{max-width:750px;margin:auto;display:flex;flex-direction:column;gap:15px}
+input,select,textarea{padding:16px;border:none;border-radius:14px}
+button{padding:16px;border:none;border-radius:14px;background:#25D366;color:#fff;font-weight:700;cursor:pointer}
+.cta{text-align:center;background:linear-gradient(135deg,#081528,#102b53)}
+footer{text-align:center;padding:35px;background:#06111f;color:#aaa}
+.whats{position:fixed;bottom:20px;right:20px;background:#25D366;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:28px}
+@media(max-width:768px){
+.hero h1{font-size:2.6rem}
+nav div:last-child{display:none}
+section{padding:80px 6%}
+h2{font-size:2.2rem}
+}
+
+
+.logo img{
+height:72px;
+width:72px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.btn, button{
+background:#000!important;
+border:2px solid #d4af37!important;
+color:#d4af37!important;
+transition:.4s;
+position:relative;
+overflow:hidden;
+}
+
+.btn:hover, button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(212,175,55,.35);
+}
+
+.card{
+border:1px solid #000!important;
+text-align:center;
+}
+
+#sobre p{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:1.15rem;
+line-height:1.9;
+}
+
+#servicos .grid{
+max-width:1200px;
+margin:auto;
+}
+
+.whats{
+bottom:35px!important;
+right:25px!important;
+z-index:9999;
+}
